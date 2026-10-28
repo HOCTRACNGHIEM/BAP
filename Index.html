@@ -5,62 +5,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Học Trắc Nghiệm Online</title>
     <style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #333;
+        font-size: clamp(22px, 4vw, 32px);
+        margin: 20px 0;
+    }
+
+    .video-grid {
+        display: grid;
+        grid-template-columns: repeat(
+            auto-fit,
+            minmax(min(100%, 300px), 1fr)
+        );
+        gap: 20px;
+        align-items: start;
+    }
+
+    .video-container {
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        min-width: 0;
+    }
+
+    iframe {
+        display: block;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        height: auto;
+        border: 0;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        margin: 8px 0;
+    }
+
+    ul ul {
+        display: none;
+        margin: 10px 0 10px 20px;
+    }
+
+    .toggle {
+        display: inline-block;
+        cursor: pointer;
+        color: #0645ad;
+        text-decoration: underline;
+        font-weight: bold;
+        padding: 6px 0;
+    }
+
+    .toggle:hover {
+        color: #c0392b;
+    }
+
+    .toggle:focus-visible {
+        outline: 2px solid #0645ad;
+        outline-offset: 4px;
+    }
+
+    .tiktok-embed {
+        max-width: 100% !important;
+        min-width: 0 !important;
+        width: 100%;
+        margin: 0 !important;
+    }
+
+    @media (max-width: 480px) {
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 20px;
-        }
-        h1 {
-            text-align: center;
-            color: #333;
-        }
-         .video-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
-        }
-        .video-container {
-            background-color: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        iframe {
-            width: 100%;
-            height: 200px;
-        }        
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin: 5px 0;
-        }
-       
-        ul ul {
-            display: none;
-            margin-left: 20px;
+            padding: 12px;
         }
 
-        .toggle {
-            cursor: pointer;
-            color: blue;
-            text-decoration: underline;
+        .video-grid {
+            gap: 14px;
         }
-        <!-- // **************************************************** -->
-      
-    </style>
+    }
+</style>
     <!--   // ĐẠON NÀY LÀ TẠO THƯ MỤC DẠNG CÂY - NGÀY 2/10/2024 THÊM ĐOẠN NÀY *************************-->
     <script>
-         function toggleMenu(element) {
-            var submenu = element.nextElementSibling;
-            if (submenu.style.display === "none" || submenu.style.display === "") {
-                submenu.style.display = "block";
-            } else {
-                submenu.style.display = "none";
-            }
-        }        
-    </script>
+    function toggleMenu(element) {
+        const submenu = element.nextElementSibling;
+
+        if (!submenu || submenu.tagName !== "UL") {
+            return;
+        }
+
+        const isOpening =
+            submenu.style.display !== "block";
+
+        submenu.style.display = isOpening ? "block" : "none";
+        element.setAttribute("aria-expanded", String(isOpening));
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll(".toggle").forEach(function (element) {
+            element.setAttribute("role", "button");
+            element.setAttribute("tabindex", "0");
+            element.setAttribute("aria-expanded", "false");
+
+            element.addEventListener("keydown", function (event) {
+                if (event.key === "Enter" || event.key === " ") {
+                    event.preventDefault();
+                    toggleMenu(element);
+                }
+            });
+        });
+    });
+</script>
    <!-- // *************************************************************************************************** -->
 </head>
 <body>
@@ -71,7 +139,11 @@
 <ul>
 <!--     /// ĐOẠN ĐẦU CỦA PHẦN 1 ************************************************************************************** -->
     <li>
-        <span class="toggle" onclick="toggleMenu(this)"> ÔN THI GIỮA KỲ LỚP 7</span>
+        <span class="toggle"
+          onclick="toggleMenu(this)"
+          aria-expanded="false">
+            ÔN THI GIỮA KỲ LỚP 7
+        </span>
         <ul>          
             <li><a href="https://HOCTRACNGHIEM.github.io/KHOAHOCTUNHIEN L7/index.html">KHOA HỌC TỰ NHIÊN GIỮA KỲ 1 L7</a></li>
             <li><a href="https://HOCTRACNGHIEM.github.io/LICHSU_DIALY L7/index.html"> LỊCH SỬ - ĐỊA LÝ GIỮA KỲ 1 L7</a></li>
