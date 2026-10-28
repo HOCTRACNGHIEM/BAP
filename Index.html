@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học Trắc Nghiệm Online</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+         .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .video-container {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        iframe {
+            width: 100%;
+            height: 200px;
+        }        
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 5px 0;
+        }
+       
+        ul ul {
+            display: none;
+            margin-left: 20px;
+        }
+
+        .toggle {
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
+        }
+        <!-- // **************************************************** -->
+      
+    </style>
+    <!--   // ĐẠON NÀY LÀ TẠO THƯ MỤC DẠNG CÂY - NGÀY 2/10/2024 THÊM ĐOẠN NÀY *************************-->
+    <script>
+         function toggleMenu(element) {
+            var submenu = element.nextElementSibling;
+            if (submenu.style.display === "none" || submenu.style.display === "") {
+                submenu.style.display = "block";
+            } else {
+                submenu.style.display = "none";
+            }
+        }        
+    </script>
+   <!-- // *************************************************************************************************** -->
+</head>
+<body>
+    
+<!-- ///************************************************************************************************** -->
+    <h1>Học Trắc Nghiệm Online</h1>
+
+<ul>
+<!--     /// ĐOẠN ĐẦU CỦA PHẦN 1 ************************************************************************************** -->
+    <li>
+        <span class="toggle" onclick="toggleMenu(this)">1. THI QUY TRÌNH</span>
+        <ul>
+            <li>
+                <span class="toggle" onclick="toggleMenu(this)">1.1 QUY TRÌNH AN TOÀN (2026) </span>
+                <ul>
+                    <li><a href="https://HOCTRACNGHIEM.github.io/QTAT959_2023/ANTOAN2026/index.html">HỌC QTAT 2026</a></li>
+   <!--             <li><a href="https://HOCTRACNGHIEM.github.io/QTAT959_2023/2023_CAO_AP/index.html">CAO ÁP</a></li>
+                    <li><a href="https://HOCTRACNGHIEM.github.io/QTAT959_2023/2023_HA_AP/index.html">HẠ ÁP</a></li>
+                    <li><a href="https://HOCTRACNGHIEM.github.io/QTAT959_2023/2023_HO_TRO/index.html">HỖ TRỢ</a></li>                  -->
+                </ul>
+            </li>
+            <li><a href="https://HOCTRACNGHIEM.github.io/QUYPHAM_2023/index.html">1.2 QUY PHẠM TRANG BỊ ĐIỆN</a></li>
+            
+            <li>
+                <span class="toggle" onclick="toggleMenu(this)">1.3 QUY TRÌNH KINH DOANH</span>
+                           
+                <ul>
+                     <li>
+                        <span class="toggle" onclick="toggleMenu(this)">PHẦN CHUNG </span>
+                        <ul>
+                            <li><a href="https://HOCTRACNGHIEM.github.io/CHUYEN_NGACH/VHDN_30 (Published)/index.html">* PHẦN CHUNG _ VĂN HÓA DOANH NGHIỆP </a></li>
+                            <li><a href="https://HOCTRACNGHIEM.github.io/CHUYEN_NGACH/ATTT_20 (Published)/index.html">* PHẦN CHUNG _ AN TOÀN THÔNG TIN </a></li>
+                        </ul>
+                    </li>
+                        <li><a href="https://HOCTRACNGHIEM.github.io/QTKD2024/CSKH2026/index.html"> CHĂM SÓC KHÁCH HÀNG </a></li>
+                        <li><a href="https://HOCTRACNGHIEM.github.io/QTKD2024/DVĐIEN2026/index.html"> DỊCH VỤ ĐIỆN </a></li>
+                        <li><a href="https://HOCTRACNGHIEM.github.io/QTKD2024/HTĐĐ2026/index.html"> HỆ THỐNG ĐO ĐẾM </a></li>
+                        <li><a href="https://HOCTRACNGHIEM.github.io/QTKD2024/GHIDIEN2026/index.html"> GHI ĐIỆN </a></li>
+                        <li><a href="https://HOCTRACNGHIEM.github.io/QTKD2024/GIADIEN2026/index.html"> GIÁ ĐIỆN </a></li>
+                        <li><a href="https://HOCTRACNGHIEM.github.io/QTKD2024/KTRADIEN2026/index.html"> KIỂM TRA ĐIỆN </a></li>
+                        <li><a href="https://HOCTRACNGHIEM.github.io/QTKD2024/3_LapHĐ2026/index.html"> LẬP HÓA ĐƠN </a></li>
+                        <li><a href="https://HOCTRACNGHIEM.github.io/QTKD2024/THITRUONGDIEN2026/index.html"> THỊ TRƯỜNG ĐIỆN </a></li>
+                        <li><a href="https://HOCTRACNGHIEM.github.io/QTKD2024/THUNGAN2026/index.html"> THU NGÂN </a></li>
+                        <li><a href="https://HOCTRACNGHIEM.github.io/QTKD2024/TIETKIEMDIEN2026/index.html"> TIẾT KIỆM ĐIỆN </a></li>
+                        <li><a href="https://HOCTRACNGHIEM.github.io/QTKD2024/TONTHAT2026/index.html"> TỔN THẤT_HSKV </a></li>
+                        <!--
+                        <li><a href="https://HOCTRACNGHIEM.github.io/QTKD2024/HOPDONG2026/index.html"> HỢP ĐỒNG </a></li>
+                        -->
+                </ul>
+            </li>
+        </ul>
+    </li>
+ <!--     /// KẾT THÚC CỦA PHẦN 1 *********************************************************************************************************************************************************************** -->
+   
+    <li>
+        <span class="toggle" onclick="toggleMenu(this)">2. THI NGHIỆP VỤ</span>
+        <ul>
+            
+            <li>
+                <span class="toggle" onclick="toggleMenu(this)">PHẦN CHUNG </span>
+                <ul>
+                    <li><a href="https://HOCTRACNGHIEM.github.io/CHUYEN_NGACH/VHDN_30 (Published)/index.html">* PHẦN CHUNG _ VĂN HÓA DOANH NGHIỆP </a></li>
+                    <li><a href="https://HOCTRACNGHIEM.github.io/CHUYEN_NGACH/ATTT_20 (Published)/index.html">* PHẦN CHUNG _ AN TOÀN THÔNG TIN </a></li>
+                </ul>
+            </li>
+            
+            <li>
+                <span class="toggle" onclick="toggleMenu(this)">2.1 NGHIỆP VỤ KHVT (2025) </span>
+                <ul>
+                    
+                    <li><a href="https://HOCTRACNGHIEM.github.io/KEHOACHVATTU/KEHOACH2025/index.html">* NGHIỆP VỤ KẾ HOẠCH </a></li>
+                    <li><a href="https://HOCTRACNGHIEM.github.io/KEHOACHVATTU/VATTU2025/index.html">* NGHIỆP VỤ VẬT TƯ </a></li>
+                </ul>
+            </li>           
+            
+         
+            <li>
+                <span class="toggle" onclick="toggleMenu(this)">2.2 NGHIỆP VỤ TCNS (2025) </span>
+                <ul>
+                 
+                    <li><a href="https://HOCTRACNGHIEM.github.io/PHAPCHE2025/index.html">* NGHIỆP VỤ PHÁP CHẾ </a></li>                   
+                    <li><a href="https://HOCTRACNGHIEM.github.io/DAOTAO2025/index.html">* NGHIỆP VỤ ĐÀO TẠO</a></li>
+                    <li><a href="https://HOCTRACNGHIEM.github.io/THIDUAKHENTHUONG2025/index.html">* THI ĐUA KHEN THƯỞNG</a></li>
+                    <li><a href="https://HOCTRACNGHIEM.github.io/TOCHUCCANBO2025/index.html">* NGHIỆP VỤ TCCB</a></li>
+                    <li><a href="https://HOCTRACNGHIEM.github.io/TCNS/DAOTAO_LD/index.html">* NGHIỆP VỤ ĐÀO TẠO (LĐ)</a></li>
+                    <li><a href="https://HOCTRACNGHIEM.github.io/TCNS/TCCB_LD/index.html">* NGHIỆP VỤ TCCB (LĐ)</a></li>
+                    <li><a href="https://HOCTRACNGHIEM.github.io/TCNS/TDKT_LD/index.html">* THI ĐUA KHEN THƯỞNG (LĐ)</a></li>
+                    <li><a href="https://HOCTRACNGHIEM.github.io/TCNS/CSCĐ2025/index.html">* CHÍNH SÁCH CHẾ ĐỘ (LĐ) </a></li>
+                    <li><a href="https://HOCTRACNGHIEM.github.io/TCNS/LĐTL2025/index.html">* LAO ĐỘNG TIỀN LƯƠNG (LĐ) </a></li>
+                    <li><a href="https://HOCTRACNGHIEM.github.io/TCNS/YTE2025/index.html">* Y TẾ (LĐ) </a></li>
+                </ul>
+            </li>           
+
+             <li>
+                <span class="toggle" onclick="toggleMenu(this)">2.3 NGHIỆP VỤ VĂN PHÒNG </span>
+                <ul>
+                    <li><a href="https://HOCTRACNGHIEM.github.io/VANPHONG2026/index.html">* NGHIỆP VỤ VĂN PHÒNG </a></li>
+                    
+                </ul>
+            </li>
+               <li><a href="https://HOCTRACNGHIEM.github.io/CHUNGCHITHAU340/index.html">* CHỨNG CHỈ ĐẤU THẦU 340 CÂU </a></li>
+               <!-- <li><a href="https://HOCTRACNGHIEM.github.io/Chungchithau_BS70/index.html">* CHỨNG CHỈ ĐẤU THẦU 70 CÂU BS </a></li> -->
+            
+        </ul>
+    </li>
+ <!--     /// KẾT THÚC CỦA PHẦN 2 *********************************************************************************************************************************************************************** -->
+    <li>
+        <span class="toggle" onclick="toggleMenu(this)">3. NÂNG BẬC SÁT HẠCH NGHỀ</span>
+        <ul>
+        <!-- BẮT ĐẦU PHẦN 3.1 *******************************************************************-->
+            <li>
+                <span class="toggle" onclick="toggleMenu(this)">3.1 CÔNG NHÂN KỸ THUẬT</span>
+                <ul>
+                    <li><a href="https://HOCTRACNGHIEM.github.io/CN THI CHUNG/CHUANMUCDAODUC2026/index.html"> CHUẨN MỰC ĐẠO ĐỨC</a></li>
+                    <li><a href="https://HOCTRACNGHIEM.github.io/CN THI CHUNG/NQLD2026/index.html"> NỘI QUY LAO ĐỘNG</a></li>
+                    <li><a href="https://HOCTRACNGHIEM.github.io/CN THI CHUNG/SCADA2026/index.html"> SCADA</a></li>
+                    <li><a href="https://HOCTRACNGHIEM.github.io/CN THI CHUNG/ViphamSDĐ2026/index.html"> VI PHẠM SỬ DỤNG ĐIỆN</a></li>
+                    <li><a href="https://HOCTRACNGHIEM.github.io/CHUYEN_NGACH/VHDN_30 (Published)/index.html"> VĂN HÓA DOANH NGHIỆP </a></li>
+                    <li><a href="https://HOCTRACNGHIEM.github.io/CN_KYTHUAT/VHTB_DONGCAT2026/index.html"> VẬN HÀNH THIẾT BỊ ĐÓNG CẮT</a></li>
+                    <li><a href="https://HOCTRACNGHIEM.github.io/CN_KYTHUAT/QLVH_QLSC BAC7/index.html">+ QLVH VÀ QLSC 7/7</a></li>
+                    <li><a href="https://HOCTRACNGHIEM.github.io/CN_KYTHUAT/QLVH_QLSC BAC6/index.html">+ QLVH VÀ QLSC 6/7</a></li>
+
+                    <li><a href="https://drive.google.com/drive/folders/1NUQMbq6q4SuGW2MZ5HvLOFONNoDEbyfc?usp=sharing" target="_blank">
+     <img src="https://HOCTRACNGHIEM.github.io/CN_KYTHUAT/QRCODE_TAILIEU_CNKT.png" alt="Mã QR Code" width="200"> TÀI LIỆU CHO CNKT (FILE IN) </a></li>
+                    
+                </ul>
+            </li>
+        <!--     /// KẾT THÚC CỦA PHẦN 3.1 ******************************************************************************************************* -->
+            <li>
+                <span class="toggle" onclick="toggleMenu(this)">3.2 CÔNG NHÂN KINH DOANH</span>
+                <ul>
+                    <li><a href="https://drive.google.com/drive/folders/1NUQMbq6q4SuGW2MZ5HvLOFONNoDEbyfc?usp=sharing" target="_blank">
+     <img src="https://HOCTRACNGHIEM.github.io/CN_KINHDOANH/QRCODE_TAILIEU_CNKD.png" alt="Mã QR Code" width="200"> TÀI LIỆU HỌC CHO CNKD (FILE IN) </a></li> 
+                    <li>
+                        <span class="toggle" onclick="toggleMenu(this)"> PHẦN THI CHUNG </span>
+                        <ul>
+                            <li><a href="https://HOCTRACNGHIEM.github.io/CN THI CHUNG/CHUANMUCDAODUC2026/index.html"> CHUẨN MỰC ĐẠO ĐỨC</a></li>
+                            <li><a href="https://HOCTRACNGHIEM.github.io/CN THI CHUNG/NQLD2026/index.html"> NỘI QUY LAO ĐỘNG</a></li>
+                            <li><a href="https://HOCTRACNGHIEM.github.io/CN THI CHUNG/ViphamSDĐ2026/index.html"> VI PHẠM SỬ DỤNG ĐIỆN</a></li>
+                            <li><a href="https://HOCTRACNGHIEM.github.io/CHUYEN_NGACH/VHDN_30 (Published)/index.html"> VĂN HÓA DOANH NGHIỆP </a></li>
+                            <li><a href="https://HOCTRACNGHIEM.github.io/CN_KINHDOANH/CN_KINHDOANH/CNKD BAC7/index.html"> KỸ THUẬT ĐIỆN 7/7 </a></li>
+                            <li><a href="https://HOCTRACNGHIEM.github.io/CN_KINHDOANH/CN_KINHDOANH/CNKD BAC6/index.html"> KỸ THUẬT ĐIỆN 6/7 </a></li>
+                        </ul>
+                    <li>
+                        <span class="toggle" onclick="toggleMenu(this)">3.2.1 CÔNG NHÂN TREO THÁO</span>
+                        <ul>
+                            <li><a href="https://HOCTRACNGHIEM.github.io/QTKD2024/CSKH2026/index.html"> CHĂM SÓC KHÁCH HÀNG</a></li>
+                            <li><a href="https://HOCTRACNGHIEM.github.io/QTKD2024/DVĐIEN2026/index.html"> DỊCH VỤ ĐIỆN </a></li>
+                            <li><a href="https://HOCTRACNGHIEM.github.io/QTKD2024/HTĐĐ2026/index.html"> HỆ THỐNG ĐO ĐẾM </a></li>
+                            <li><a href="https://HOCTRACNGHIEM.github.io/QTKD2024/GHIDIEN2026/index.html"> GHI ĐIỆN </a></li>
+                            <li><a href="https://HOCTRACNGHIEM.github.io/QTKD2024/GIADIEN2026/index.html"> GIÁ ĐIỆN </a></li>                            
+                            <li><a href="https://HOCTRACNGHIEM.github.io/QTKD2024/THITRUONGDIEN2026/index.html"> THỊ TRƯỜNG ĐIỆN </a></li>
+                            
+                        </ul>
+                    </li>
+                 <!--     /// KẾT THÚC CỦA PHẦN 3.2.1 ******************************************************************************************************* -->
+                    <li>
+                        <span class="toggle" onclick="toggleMenu(this)">3.2.2 CÔNG NHÂN TỔNG HỢP</span>
+                        <ul>
+                            <li><a href="https://HOCTRACNGHIEM.github.io/QTKD2024/CSKH2026/index.html"> CHĂM SÓC KHÁCH HÀNG5</a></li>
+                            <li><a href="https://HOCTRACNGHIEM.github.io/QTKD2024/DVĐIEN2026/index.html"> DỊCH VỤ ĐIỆN</a></li>
+                            <li><a href="https://HOCTRACNGHIEM.github.io/QTKD2024/HTĐĐ2026/index.html"> HỆ THỐNG ĐO ĐẾM</a></li>
+                            <li><a href="https://HOCTRACNGHIEM.github.io/QTKD2024/GHIDIEN2026/index.html"> GHI ĐIỆN </a></li>
+                            <li><a href="https://HOCTRACNGHIEM.github.io/QTKD2024/THITRUONGDIEN2026/index.html"> THỊ TRƯỜNG ĐIỆN</a></li>
+                       
+                        </ul>
+                    </li>
+                <!--     /// KẾT THÚC CỦA PHẦN 3.2.2 ******************************************************************************************************* --> 
+                    <li>
+                        <span class="toggle" onclick="toggleMenu(this)">3.2.3 TỔ VH ĐO XA (QLHTĐĐ)</span>
+                        <ul>
+                            <li><a href="https://HOCTRACNGHIEM.github.io/QTKD2024/CSKH2026/index.html"> CHĂM SÓC KHÁCH HÀNG </a></li>
+                            <li><a href="https://HOCTRACNGHIEM.github.io/QTKD2024/DVĐIEN2026/index.html"> DỊCH VỤ ĐIỆN </a></li>
+                        <li><a href="https://HOCTRACNGHIEM.github.io/QTKD2024/HTĐĐ2026/index.html"> HỆ THỐNG ĐO ĐẾM </a></li>
+                        <li><a href="https://HOCTRACNGHIEM.github.io/QTKD2024/GHIDIEN2026/index.html"> GHI ĐIỆN </a></li>
+                        <li><a href="https://HOCTRACNGHIEM.github.io/QTKD2024/GIADIEN2026/index.html"> GIÁ ĐIỆN </a></li>                      
+                        <li><a href="https://HOCTRACNGHIEM.github.io/QTKD2024/HOPDONG2026/index.html"> LẬP HÓA ĐƠN </a></li>
+                        <li><a href="https://HOCTRACNGHIEM.github.io/QTKD2024/THITRUONGDIEN2026/index.html"> THỊ TRƯỜNG ĐIỆN 2025</a></li>                     
+                        <li><a href="https://HOCTRACNGHIEM.github.io/QTKD2024/TONTHAT2026/index.html"> TỔN THẤT_HSKV 2025</a></li>
+                        
+                        </ul>
+                    </li>
+                <!--     /// KẾT THÚC CỦA PHẦN 3.2.3 ******************************************************************************************************* -->    
+                    <li>
+                        <span class="toggle" onclick="toggleMenu(this)">3.2.4 TỔ THU NGÂN (QLTG)</span>
+                        <ul>
+                           
+                            
+                            <li><a href="https://HOCTRACNGHIEM.github.io/QTKD2024/CSKH2026/index.html"> CHĂM SÓC KHÁCH HÀNG</a></li>                            
+                            <li><a href="https://HOCTRACNGHIEM.github.io/QTKD2024/3_LapHĐ2026/index.html"> LẬP HÓA ĐƠN</a></li>
+                            <li><a href="https://HOCTRACNGHIEM.github.io/QTKD2024/THUNGAN2026/index.html"> THU NGÂN</a></li>
+                            <li><a href="https://HOCTRACNGHIEM.github.io/QTKD2024/GIA_DIEN2026/index.html"> GIÁ ĐIỆN</a></li>
+                            <li><a href="https://HOCTRACNGHIEM.github.io/QTKD2024/THITRUONGDIEN2026/index.html"> THỊ TRƯỜNG ĐIỆN</a></li>
+                        </ul>
+                    </li>
+                <!--     /// KẾT THÚC CỦA PHẦN 3.2.4 ******************************************************************************************************* -->
+                  <li>
+                        <span class="toggle" onclick="toggleMenu(this)">3.2.5 TỔ THU NỢ (QLTG)</span>
+                        <ul>
+                            
+                  
+                            <li><a href="https://HOCTRACNGHIEM.github.io/QTKD2024/CSKH2026/index.html"> CHĂM SÓC KHÁCH HÀNG</a></li>                           
+                            <li><a href="https://HOCTRACNGHIEM.github.io/QTKD2024/HTĐĐ2026/index.html"> HỆ THỐNG ĐO ĐẾM</a></li>
+                            <li><a href="https://HOCTRACNGHIEM.github.io/QTKD2024/TONTHAT2026/index.html"> TỔN THẤT_HSKV</a></li>
+                            <li><a href="https://HOCTRACNGHIEM.github.io/QTKD2024/THITRUONGDIEN2026/index.html"> THỊ TRƯỜNG ĐIỆN</a></li>
+                        </ul>
+                    </li>
+                <!--     /// KẾT THÚC CỦA PHẦN 3.2.5 ******************************************************************************************************* -->
+                </ul>
+            </li>
+          <!--     /// KẾT THÚC CỦA PHẦN 3.2 ********************************    -->     
+            <li>
+                <span class="toggle" onclick="toggleMenu(this)">3.3 CÔNG NHÂN VẬT TƯ</span>
+                <ul>
+                    <li><a href="https://HOCTRACNGHIEM.github.io/CHUYEN_NGACH/ATTT_20 (Published)/index.html">* AN TOÀN THÔNG TIN </a></li>
+                    <li><a href="https://HOCTRACNGHIEM.github.io/CHUYEN_NGACH/VHDN_30 (Published)/index.html">* VĂN HÓA DOANH NGHIỆP </a></li>
+                    <li><a href="https://HOCTRACNGHIEM.github.io/CN_VATTU/index.html">* CÔNG NHÂN LÀNH NGHỀ VẬT TƯ</a></li>                    
+                </ul>
+            </li>
+                <!--     /// KẾT THÚC CỦA PHẦN 3.3 ******************************************************************************************************* -->
+                          
+        </ul>
+    </li>
+ <!--     /// KẾT THÚC CỦA PHẦN 3 *********************************************************************************************************************************************************************** -->
+    <li>
+        <span class="toggle" onclick="toggleMenu(this)">4. KỸ SƯ</span>
+            <ul>
+         <!--   <li><a href="https://HOCTRACNGHIEM.github.io/CHUYEN_NGACH/ATTT_20 (Published)/index.html">* AN TOÀN THÔNG TIN </a></li>
+                <li><a href="https://HOCTRACNGHIEM.github.io/CHUYEN_NGACH/EXCEL_70 (Published)/index.html">* EXCEL </a></li>
+                <li><a href="https://HOCTRACNGHIEM.github.io/CHUYEN_NGACH/OUTLOOK_15 (Published)/index.html">* OUTLOOK </a></li>
+                <li><a href="https://HOCTRACNGHIEM.github.io/CHUYEN_NGACH/POWERPOINTT20 (Published)/index.html">* POWERPOINT </a></li>
+                <li><a href="https://HOCTRACNGHIEM.github.io/QUYPHAM_2023/index.html">* QUY PHẠM TRANG BỊ ĐIỆN</a></li>
+                
+                <li><a href="https://HOCTRACNGHIEM.github.io/CHUYEN_NGACH/WIN_30 (Published)/index.html">* WINDOWS </a></li>
+                <li><a href="https://HOCTRACNGHIEM.github.io/CHUYEN_NGACH/WORD_70 (Published)/index.html">* WORD </a></li>
+                <li><a href="https://HOCTRACNGHIEM.github.io/CHUYEN_NGACH/THANHTRA250 (Published)/index.html">* KIỂM TRA THANH TRA </a></li>
+           -->  
+                
+                <li><a href="https://HOCTRACNGHIEM.github.io/CHUYEN_NGACH/VHDN_30 (Published)/index.html">* PHẦN CHUNG _ VĂN HÓA DOANH NGHIỆP </a></li>
+                <li><a href="https://HOCTRACNGHIEM.github.io/CHUYEN_NGACH/ATTT_20 (Published)/index.html">* PHẦN CHUNG _ AN TOÀN THÔNG TIN </a></li>
+                <li><a href="https://HOCTRACNGHIEM.github.io/KS_KhoiKT/index.html">* KỸ SƯ ĐIỆN </a></li>  
+                <li><a href="https://HOCTRACNGHIEM.github.io/KS_KhoiKT/QLĐT2026/index.html">* KỸ SƯ PHÒNG QLĐT </a></li>
+                <li><a href="https://HOCTRACNGHIEM.github.io/SHNVANTOAN2026/index.html">* KỸ SƯ AT</a></li>
+                <li>
+                        <span class="toggle" onclick="toggleMenu(this)">KS CNTT</span>
+                        <ul>
+                            <li><a href="https://HOCTRACNGHIEM.github.io/CHUYEN_NGACH/VHDN_30 (Published)/index.html"> VĂN HÓA DOANH NGHIỆP </a></li>
+                            <li><a href="https://HOCTRACNGHIEM.github.io/KS_KhoiKT/KYSUCNTT30/ATTT2026/index.html"> An toàn thông tin_85c</a></li>
+                            <li><a href="https://HOCTRACNGHIEM.github.io/KS_KhoiKT/KYSUCNTT30/ATTT_SHNV2026/index.html"> An toàn thông tin_200c</a></li> 
+                            <li><a href="https://HOCTRACNGHIEM.github.io/KS_KhoiKT/KYSUCNTT30/QUYTRINHQĐ2026/index.html"> QUY TRÌNH - QUY ĐỊNH</a></li> 
+                            
+                        </ul>
+                    </li>
+                
+            </ul>
+    </li>
+
+</ul>
+    
+
+        <!--     /// ĐOẠN NÀY LÀ CỦA PHẦN SAU, NGÀY 2/10/2024 KHÔNG SỬA **************************************************************************** -->
+<a href="https://info.flagcounter.com/NNiW"><img src="https://s11.flagcounter.com/mini/NNiW/bg_FFFFFF/txt_000000/border_CCCCCC/flags_0/" alt="Flag Counter" border="0"></a>
+<!-- **********************************************************************
+  <h1>RÚT KINH NGHIỆM CÁC VỤ TNLĐ ĐÃ TỪNG XẢY RA</h1>
+
+    <div class="video-grid">
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/2H5Gomz4LV8?si=Vn_Yhq8Gw3EyTSJg" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/vikr4C4sLaY?si=A9xx0DY9jFsW_b41" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/S5iulJkpMJQ?si=l6rY-W7xWNYGftc-" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/6AKHpxq7WpQ?si=ZnXlKxr9uC179I7y" frameborder="0" allowfullscreen></iframe>
+        </div>
+         <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/KkVb3xCGxN4?si=JXYeFtZzt7mP0-kf" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/w2T11YTdX5Y?si=H98lIigTl7mQZJnD" frameborder="0" allowfullscreen></iframe>
+        </div>
+         <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/-6zniTiEM6c?si=9yywuqwHzqH_8Mry" frameborder="0" allowfullscreen></iframe>
+        </div>
+        
+    </div>
+                                                                        -->
+        <h1>CHUYÊN ĐỀ - HƯỚNG DẪN</h1>
+    <div class="video-grid">
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/OxMB64A2nzA?si=osOOv6n02Vhqaho5" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/YJcdz_kf6iI?si=l88IGFvAn44k-opj" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <!--  
+       <div class="video-container">
+            <iframe src="https://www.tiktok.com/embed/v2/7591717140059753736" frameborder="0" allowfullscreen></iframe>
+        </div>
+        -->
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@viethoang779/video/7591374621161606418" data-video-id="7591374621161606418" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@viethoang779" href="https://www.tiktok.com/@viethoang779?refer=embed">@viethoang779</a> <p></p> <a target="_blank" title="♬ nhạc nền  - VietHoang779" href="https://www.tiktok.com/music/nhạc-nền-VietHoang779-7591374683048577809?refer=embed">♬ nhạc nền  - VietHoang779</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@viethoang779/video/7591717140059753736" data-video-id="7591717140059753736" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@viethoang779" href="https://www.tiktok.com/@viethoang779?refer=embed">@viethoang779</a> <p></p> <a target="_blank" title="♬ nhạc nền  - VietHoang779" href="https://www.tiktok.com/music/nhạc-nền-VietHoang779-7591717248349834004?refer=embed">♬ nhạc nền  - VietHoang779</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@viethoang779/video/7437796840302595346" data-video-id="7437796840302595346" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@viethoang779" href="https://www.tiktok.com/@viethoang779?refer=embed">@viethoang779</a> <p></p> <a target="_blank" title="♬ nhạc nền  - VietHoang779" href="https://www.tiktok.com/music/nhạc-nền-VietHoang779-7437796886897068817?refer=embed">♬ nhạc nền  - VietHoang779</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@viethoang779/video/7436614398602480914" data-video-id="7436614398602480914" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@viethoang779" href="https://www.tiktok.com/@viethoang779?refer=embed">@viethoang779</a> <p></p> <a target="_blank" title="♬ nhạc nền  - VietHoang779" href="https://www.tiktok.com/music/nhạc-nền-VietHoang779-7436614463240801041?refer=embed">♬ nhạc nền  - VietHoang779</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@viethoang779/video/7700513954090454273" data-video-id="7700513954090454273" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@viethoang779" href="https://www.tiktok.com/@viethoang779?refer=embed">@viethoang779</a> <p></p> <a target="_blank" title="♬ âm thanh gốc  - VietHoang779" href="https://www.tiktok.com/music/âm-thanh-gốc-VietHoang779-7700514074364201735?refer=embed">♬ âm thanh gốc  - VietHoang779</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+    </div>
+    
+</body>
+</html>
