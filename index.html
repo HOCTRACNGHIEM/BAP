@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học Trắc Nghiệm Online</title>
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #333;
+        font-size: clamp(22px, 4vw, 32px);
+        margin: 20px 0;
+    }
+
+    .video-grid {
+        display: grid;
+        grid-template-columns: repeat(
+            auto-fit,
+            minmax(min(100%, 300px), 1fr)
+        );
+        gap: 20px;
+        align-items: start;
+    }
+
+    .video-container {
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        min-width: 0;
+    }
+
+    iframe {
+        display: block;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        height: auto;
+        border: 0;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        margin: 8px 0;
+    }
+
+    ul ul {
+        display: none;
+        margin: 10px 0 10px 20px;
+    }
+
+    .toggle {
+        display: inline-block;
+        cursor: pointer;
+        color: #0645ad;
+        text-decoration: underline;
+        font-weight: bold;
+        padding: 6px 0;
+    }
+
+    .toggle:hover {
+        color: #c0392b;
+    }
+
+    .toggle:focus-visible {
+        outline: 2px solid #0645ad;
+        outline-offset: 4px;
+    }
+
+    .tiktok-embed {
+        max-width: 100% !important;
+        min-width: 0 !important;
+        width: 100%;
+        margin: 0 !important;
+    }
+
+    @media (max-width: 480px) {
+        body {
+            padding: 12px;
+        }
+
+        .video-grid {
+            gap: 14px;
+        }
+    }
+</style>
+    <!--   // ĐẠON NÀY LÀ TẠO THƯ MỤC DẠNG CÂY - NGÀY 2/10/2024 THÊM ĐOẠN NÀY *************************-->
+    <script>
+    function toggleMenu(element) {
+        const submenu = element.nextElementSibling;
+
+        if (!submenu || submenu.tagName !== "UL") {
+            return;
+        }
+
+        const isOpening =
+            submenu.style.display !== "block";
+
+        submenu.style.display = isOpening ? "block" : "none";
+        element.setAttribute("aria-expanded", String(isOpening));
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll(".toggle").forEach(function (element) {
+            element.setAttribute("role", "button");
+            element.setAttribute("tabindex", "0");
+            element.setAttribute("aria-expanded", "false");
+
+            element.addEventListener("keydown", function (event) {
+                if (event.key === "Enter" || event.key === " ") {
+                    event.preventDefault();
+                    toggleMenu(element);
+                }
+            });
+        });
+    });
+</script>
+   <!-- // *************************************************************************************************** -->
+</head>
+<body>
+    
+<!-- ///************************************************************************************************** -->
+    <h1>Học Trắc Nghiệm Online</h1>
+
+<ul>
+<!--     /// ĐOẠN ĐẦU CỦA PHẦN 1 ************************************************************************************** -->
+    <li>
+        <span class="toggle"
+          onclick="toggleMenu(this)"
+          aria-expanded="false">
+            ÔN THI GIỮA KỲ LỚP 7
+        </span>
+        <ul>          
+            <li><a href="https://HOCTRACNGHIEM.github.io/KHOAHOCTUNHIEN%20L7/index.html">KHOA HỌC TỰ NHIÊN GIỮA KỲ 1 L7</a></li>
+            <li><a href="https://HOCTRACNGHIEM.github.io/LICHSU_DIALY%20L7/index.html"> LỊCH SỬ - ĐỊA LÝ GIỮA KỲ 1 L7</a></li>
+            <li><a href="https://HOCTRACNGHIEM.github.io/TINHOC%20L7/index.html"> TIN HỌC GIỮA KỲ 1 L7</a></li>
+        
+        </ul>
+    </li>
+</ul>
+ <!--     /// KẾT THÚC CỦA PHẦN 1 *********************************************************************************************************************************************************************** -->
+ 
+
+        <!--     /// ĐOẠN NÀY LÀ CỦA PHẦN SAU, NGÀY 2/10/2024 KHÔNG SỬA **************************************************************************** -->
+<a href="https://info.flagcounter.com/NNiW"><img src="https://s11.flagcounter.com/mini/NNiW/bg_FFFFFF/txt_000000/border_CCCCCC/flags_0/" alt="Flag Counter" border="0"></a>
+<!-- **********************************************************************
+  <h1>RÚT KINH NGHIỆM CÁC VỤ TNLĐ ĐÃ TỪNG XẢY RA</h1>
+
+    <div class="video-grid">
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/2H5Gomz4LV8?si=Vn_Yhq8Gw3EyTSJg" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/vikr4C4sLaY?si=A9xx0DY9jFsW_b41" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/S5iulJkpMJQ?si=l6rY-W7xWNYGftc-" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/6AKHpxq7WpQ?si=ZnXlKxr9uC179I7y" frameborder="0" allowfullscreen></iframe>
+        </div>
+         <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/KkVb3xCGxN4?si=JXYeFtZzt7mP0-kf" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/w2T11YTdX5Y?si=H98lIigTl7mQZJnD" frameborder="0" allowfullscreen></iframe>
+        </div>
+         <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/-6zniTiEM6c?si=9yywuqwHzqH_8Mry" frameborder="0" allowfullscreen></iframe>
+        </div>
+        
+    </div>
+                                                                        -->
+        <h1>CHUYÊN ĐỀ - HƯỚNG DẪN</h1>
+    <div class="video-grid">
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/OxMB64A2nzA?si=osOOv6n02Vhqaho5" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/YJcdz_kf6iI?si=l88IGFvAn44k-opj" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <!--  
+       <div class="video-container">
+            <iframe src="https://www.tiktok.com/embed/v2/7591717140059753736" frameborder="0" allowfullscreen></iframe>
+        </div>
+        -->
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@viethoang779/video/7591374621161606418" data-video-id="7591374621161606418" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@viethoang779" href="https://www.tiktok.com/@viethoang779?refer=embed">@viethoang779</a> <p></p> <a target="_blank" title="♬ nhạc nền  - VietHoang779" href="https://www.tiktok.com/music/nhạc-nền-VietHoang779-7591374683048577809?refer=embed">♬ nhạc nền  - VietHoang779</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@viethoang779/video/7591717140059753736" data-video-id="7591717140059753736" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@viethoang779" href="https://www.tiktok.com/@viethoang779?refer=embed">@viethoang779</a> <p></p> <a target="_blank" title="♬ nhạc nền  - VietHoang779" href="https://www.tiktok.com/music/nhạc-nền-VietHoang779-7591717248349834004?refer=embed">♬ nhạc nền  - VietHoang779</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@viethoang779/video/7437796840302595346" data-video-id="7437796840302595346" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@viethoang779" href="https://www.tiktok.com/@viethoang779?refer=embed">@viethoang779</a> <p></p> <a target="_blank" title="♬ nhạc nền  - VietHoang779" href="https://www.tiktok.com/music/nhạc-nền-VietHoang779-7437796886897068817?refer=embed">♬ nhạc nền  - VietHoang779</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@viethoang779/video/7436614398602480914" data-video-id="7436614398602480914" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@viethoang779" href="https://www.tiktok.com/@viethoang779?refer=embed">@viethoang779</a> <p></p> <a target="_blank" title="♬ nhạc nền  - VietHoang779" href="https://www.tiktok.com/music/nhạc-nền-VietHoang779-7436614463240801041?refer=embed">♬ nhạc nền  - VietHoang779</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@viethoang779/video/7700513954090454273" data-video-id="7700513954090454273" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@viethoang779" href="https://www.tiktok.com/@viethoang779?refer=embed">@viethoang779</a> <p></p> <a target="_blank" title="♬ âm thanh gốc  - VietHoang779" href="https://www.tiktok.com/music/âm-thanh-gốc-VietHoang779-7700514074364201735?refer=embed">♬ âm thanh gốc  - VietHoang779</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+    </div>
+    
+</body>
+</html>
